@@ -7,13 +7,14 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/add"
+        android:id="@+id/calculator"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:onClick="addXandY"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,20 +23,20 @@
         app:layout_constraintVertical_bias="0.36" />
 
     <EditText
-        android:id="@+id/x"
+        android:id="@+id/editTextX"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter value for X"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/add"
-        app:layout_constraintEnd_toStartOf="@+id/y"
+        app:layout_constraintBottom_toTopOf="@+id/calculator"
+        app:layout_constraintEnd_toStartOf="@+id/editTextY"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/y"
+        android:id="@+id/editTextY"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -43,7 +44,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/x"
-        app:layout_constraintTop_toTopOf="@+id/x" />
+        app:layout_constraintStart_toEndOf="@+id/editTextX"
+        app:layout_constraintTop_toTopOf="@+id/editTextX" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
